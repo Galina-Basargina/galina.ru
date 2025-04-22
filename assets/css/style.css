@@ -148,3 +148,109 @@ button {
 button:hover {
     background: #45a049;
 }
+
+
+
+/* Стили для формы */
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(8px);
+    animation: pop-in 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #4a90e2;
+    margin: 0.8rem auto;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: #495057;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #f8f9fa;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+    background: white;
+}
+
+button {
+    background: #4a90e2;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: block;
+}
+
+button:hover {
+    background: #357abd;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .form-container {
+        margin: 20px 15px;
+        padding: 1.5rem;
+    }
+    
+    .form-title {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        padding: 0.7rem 1.5rem;
+    }
+}
