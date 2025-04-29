@@ -254,3 +254,87 @@ button:active {
         padding: 0.7rem 1.5rem;
     }
 }
+
+
+.container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.advice-box {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+
+#saved-list {
+    margin-top: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    background: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-button.active {
+    background: #357abd;
+    color: white;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    background: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-button.active {
+    background: #357abd;
+    color: white;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px 4px;
+}
+
+.content.active {
+    display: block;
+}
+
+.fact-box {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+
+
+#saved-facts {
+    margin-top: 30px;
+}
